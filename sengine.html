@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    
+    <title>FindShopeMe</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+    
+    
+<body>
+
+<!--- header --->
+<section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">SEARCH ENGINE</a></li>
+                    <li><a href="sengine.html">ONLINE SHOP</a></li>
+                    
+                    <li><a href="smart.html">FIND SMART</a></li>
+    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+            
+        
+    </section>
+    
+<!--- search bar --->
+<div class="search">
+    <h4>FindShopMe</h4>
+    <input id="search" type="text" placeholder="Type item you want to find..."><br>
+    <a href="#" class="btn" onclick="shopee()">Shopee</a>
+    <a href="#" class="btn" onclick="tokopedia()">Tokopedia</a>
+    <a href="#" class="btn" onclick="lazada()">Lazada</a>
+    <a href="#" class="btn" onclick="blibli()">Blibli</a>
+    <a href="#" class="btn" onclick="bukalapak()">Bukalapak</a>
+    <a href="#" class="btn" onclick="olx()">OLX</a>
+<br>
+    <a href="#" class="btn" onclick="amazon()">Amazon</a>
+    <a href="#" class="btn" onclick="aliexpress()">AliExpress</a>
+    <a href="#" class="btn" onclick="ali()">Alibaba</a>
+    <a href="#" class="btn" onclick="ebay()">eBay</a>
+    
+</div>
+
+<!--- footer --->
+<section class="footer">
+    
+    <div class="icons">
+        <a href="" target="_blank"><i href="" class="fab fa-facebook"></i></a>
+        
+        <a href="" target="_blank"><i href="" class="fab fa-twitter"></i></a>
+        
+        <a href="https://www.instagram.com/bertrandusgbrl/" target="_blank" ><i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.linkedin.com/in/bertrandus-utomo-4a43aa203/" target="_blank"><i href="" class="fab fa-linkedin"></i></a>
+    </div>
+    
+    <p>by Bertrandus Gabriel Utomo </p>
+    <br>
+    <h4>About Us</h4>
+    <p>This website is a website created for experiment purpose and this website does not take any advantage of our users. please provide suggestions and input via Direct Message on the available social media. </p>
+    <br>
+</section>
+    
+
+
+
+<!-- Javascript -->
+<script>
+    function shopee(){
+        var x = document.getElementById("search").value; 
+        const url = "https://shopee.co.id/search?keyword=";
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}   
+    function tokopedia(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.tokopedia.com/search?st=product&q=";
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function lazada(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.lazada.co.id/catalog/?q=";
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function blibli(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.blibli.com/cari/" ;
+        const url2 = "?rating=4&promo=campaign_CAMP-00735&promo=COMBO&promo=merchantVoucher";
+        var url1 = url + x + url2;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function bukalapak(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.bukalapak.com/products?from=omnisearch&from_keyword_history=false&search%5Bkeywords%5D=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function amazon(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.amazon.com/s?k=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function aliexpress(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.aliexpress.com/af/" ;
+        const url2 = ".html?d=y&origin=n&SearchText=";
+        var url1 = url + x + url2;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function ali(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}
+    function ebay(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}
+    function olx(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.olx.co.id/items/q-" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}
+
+</script>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+
+</body>
+
+
+
+</html>

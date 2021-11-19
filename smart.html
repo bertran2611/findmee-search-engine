@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    
+    <title>FindSmartMe</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+    
+    
+<body>
+
+<!--- header --->
+<section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">SEARCH ENGINE</a></li>
+                    <li><a href="sengine.html">ONLINE SHOP</a></li>
+                    <li><a href="smart.html">FIND SMART</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+            
+        
+    </section>
+    
+<!--- search bar --->
+
+<div class="search">
+    <h4>FindSmartMe</h4>
+    <input id="search" type="text" placeholder="Type anything you want to know..."><br>
+    <a href="#" class="btn" onclick="wiki()">Wikipedia</a>
+    <a href="#" class="btn" onclick="encyclopedia()">Encyclopedia</a>
+    <a href="#" class="btn" onclick="eol()">EOL</a>
+    <a href="#" class="btn" onclick="oxfordre()">Oxford RE</a>
+    <a href="#" class="btn" onclick="scholar()">Scholar</a>
+<br>
+    <a href="#" class="btn" onclick="britannica()">Britannica</a>
+    <a href="#" class="btn" onclick="worldhis()">World History</a>
+    <a href="#" class="btn" onclick="everi()">Everipedia</a>
+    <a href="#" class="btn" onclick="neww()">New World</a>
+    
+</div>
+
+<!--- footer --->
+<section class="footer">
+    
+    <div class="icons">
+        <a href="https://www.facebook.com/" target="_blank"><i href="" class="fab fa-facebook"></i></a>
+        
+        <a href="https://twitter.com/" target="_blank"><i href="" class="fab fa-twitter"></i></a>
+        
+        <a href="https://www.instagram.com/bertrandusgbrl/" target="_blank" ><i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.linkedin.com/in/bertrandus-utomo-4a43aa203/" target="_blank"><i href="" class="fab fa-linkedin"></i></a>
+    </div>
+    
+    <p>by Bertrandus Gabriel Utomo </p>
+    <br>
+    <h4>About Us</h4>
+    <p>This website is a website created for experimentpurpose and this website does not take any advantage of our users. please provide suggestions and input via Direct Message on the available social media.</p>
+    <br>
+</section>
+    
+
+
+
+<!-- Javascript -->
+<script>
+    function wiki(){
+        var x = document.getElementById("search").value; 
+        const url = "https://en.wikipedia.org/wiki/" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}   
+    function encyclopedia(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.encyclopedia.com/gsearch?q=";
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function eol(){
+        var x = document.getElementById("search").value; 
+        const url = "https://eol.org/search?utf8=%E2%9C%93&q=";
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function oxfordre(){
+        var x = document.getElementById("search").value; 
+        const url = "https://oxfordre.com/search?q=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function scholar(){
+        var x = document.getElementById("search").value; 
+        const url = "https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}
+    function britannica(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.britannica.com/search?query=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function worldhis(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.worldhistory.org/search/?q=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function everi(){
+        var x = document.getElementById("search").value; 
+        const url = "https://everipedia.org/search?input=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}
+    function neww(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.newworldencyclopedia.org/p/index.php?title=+Special%3ASearch&search=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}
+    function olx(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.olx.co.id/items/q-" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}
+
+</script>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+
+</body>
+
+
+
+</html>

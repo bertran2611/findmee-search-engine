@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    
+    <title>FindSearchMe</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+    
+    
+<body>
+
+<!--- header --->
+<section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">SEARCH ENGINE</a></li>
+                    <li><a href="sengine.html">ONLINE SHOP</a></li>
+                    <li><a href="smart.html">FIND SMART</a></li>
+                    
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+            
+        
+    </section>
+    
+<!--- search bar --->
+<div class="search">
+    <h4>FindSearchMe</h4>
+    <input id="search" type="text" placeholder="Type anything you want to find..."><br>
+    <a href="#" class="btn" onclick="google()">Google</a>
+    <a href="#" class="btn" onclick="bing()">Bing</a>
+    <a href="#" class="btn" onclick="duckduck()">Duckduckgo</a>
+    <a href="#" class="btn" onclick="yahoo()">Yahoo</a>
+    <a href="#" class="btn" onclick="yandex()">Yandex</a>
+    <a href="#" class="btn" onclick="cc()">CC Search</a>
+<br>
+    <a href="#" class="btn" onclick="swisscows()">Swisscows</a>
+    <a href="#" class="btn" onclick="gibiru()">Gibiru</a>
+    <a href="#" class="btn" onclick="ones()">OneSearch</a>
+    <a href="#" class="btn" onclick="eco()">Ecosia</a>
+    
+    
+</div>
+
+<!--- footer --->
+<section class="footer">
+    
+    <div class="icons">
+        <a href="" target="_blank"><i href="" class="fab fa-facebook"></i></a>
+        
+        <a href="" target="_blank"><i href="" class="fab fa-twitter"></i></a>
+        
+        <a href="https://www.instagram.com/bertrandusgbrl/" target="_blank" ><i class="fab fa-instagram"></i></a>
+        
+        <a href="https://www.linkedin.com/in/bertrandus-utomo-4a43aa203/" target="_blank"><i href="" class="fab fa-linkedin"></i></a>
+    </div>
+    
+    <p>by Bertrandus Gabriel Utomo </p>
+    <br>
+    <h4>About Us</h4>
+    <p>This website is a website created for experiment purpose and this website does not take any advantage of our users. please provide suggestions and input via Direct Message on the available social media. </p>
+    <br>
+</section>
+    
+
+
+
+<!-- Javascript -->
+<script>
+    function google(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.google.com/search?q=";
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}   
+    function bing(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.bing.com/search?q=";
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function duckduck(){
+        var x = document.getElementById("search").value; 
+        const url = "https://duckduckgo.com/?q=";
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function yahoo(){
+        var x = document.getElementById("search").value; 
+        const url = "https://search.yahoo.com/search;_ylt=Awr9DueIXUFhIacAt4RXNyoA;_ylc=X1MDMjc2NjY3OQRfcgMyBGZyA3NmcARmcjIDc2ItdG9wBGdwcmlkA0hJQWtqYlRXUU91WFVlaTR3MzVEZEEEbl9yc2x0AzAEbl9zdWdnAzEwBG9yaWdpbgNzZWFyY2gueWFob28uY29tBHBvcwMwBHBxc3RyAwRwcXN0cmwDMARxc3RybAM1BHF1ZXJ5A2hvdXNlBHRfc3RtcAMxNjMxNjczNzUz?p=" ;
+
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function yandex(){
+        var x = document.getElementById("search").value; 
+        const url = "https://yandex.com/search/?text=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function cc(){
+        var x = document.getElementById("search").value; 
+        const url = "https://search.creativecommons.org/search?q=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function swisscows(){
+        var x = document.getElementById("search").value; 
+        const url = "https://swisscows.com/web?query=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+} 
+    function gibiru(){
+        var x = document.getElementById("search").value; 
+        const url = "https://gibiru.com/results.html?q=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}
+    function ones(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.onesearch.com/yhs/search;_ylt=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}
+    function eco(){
+        var x = document.getElementById("search").value; 
+        const url = "https://www.ecosia.org/search?q=" ;
+        var url1 = url + x;
+        var win = window.open(url1, '_blank');
+        win.focus;
+}
+    
+
+</script>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+
+</body>
+
+
+
+</html>
